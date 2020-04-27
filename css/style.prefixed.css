@@ -356,7 +356,7 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h5 {
@@ -369,5 +369,41 @@ h6 {
 
 p {
   font-size: 12px;
+}
+
+.flex-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home {
+  background-image: url(/images/home-background.png);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home__menu {
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  height: 100px;
+  list-style: none;
+}
+
+.home__menu .menu__item h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  letter-spacing: 2.4px;
+  cursor: pointer;
+}
+
+.home__menu .menu__item h4:hover {
+  color: #1abc9c;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
