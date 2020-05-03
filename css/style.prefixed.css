@@ -40,7 +40,7 @@ p {
 .home {
   background-image: url(/images/home-background.png);
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ p {
       align-items: center;
   width: 100%;
   min-width: 320px;
-  height: 180px;
+  height: 100px;
   list-style: none;
 }
 
@@ -86,17 +86,31 @@ p {
   margin-top: 10px;
   transform: scale(0.7);
   margin-bottom: 100px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .home__menu .menu__item h4 {
+    font-size: 30px;
+  }
+  .home__menu .menu__item--image {
+    margin-top: 40px;
+    transform: scale(1.2);
+  }
 }
 
 .home__title {
+  -ms-flex-positive: 2;
+      flex-grow: 2;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   color: #fff;
   font-family: "M PLUS Rounded 1c", sans-serif;
   width: 100%;
-  margin-top: 10px;
 }
 
 .home__title .title__header {
@@ -116,17 +130,36 @@ p {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .home__title .title__header {
+    font-size: 36px;
+    letter-spacing: 5.4px;
+  }
+  .home__title .title__subtitle {
+    font-size: 18px;
+    letter-spacing: 2.4px;
+  }
+}
+
 .home__social-media {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: end;
       align-items: flex-end;
   -ms-flex-positive: 2;
       flex-grow: 2;
-  margin: 0 auto 10px;
-  width: 50%;
+  margin: 0 auto 30px;
   font-size: 25px;
   color: #fff;
+  cursor: pointer;
+}
+
+.home__social-media .fab {
+  padding: 0 20px;
+}
+
+.home__social-media .fab:hover {
+  color: #1abc9c;
 }
 
 .home__social-media--inactive {
@@ -144,6 +177,15 @@ p {
   font-size: 12px;
   font-weight: 700;
   font-family: "M PLUS Rounded 1c", sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1abc9c;
+}
+
+.btn:focus {
+  outline: 0;
 }
 
 .btn--home {

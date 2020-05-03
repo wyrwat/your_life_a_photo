@@ -1,11 +1,19 @@
 .home__social-media {
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-end;
     flex-grow: 2;
-    margin: 0 auto 10px;
-    width: 50%;
+    margin: 0 auto 30px;
     font-size: 25px;
     color: $white;
+    cursor: pointer;
+
+    .fab {
+        padding: 0 20px;
+    }
+
+    .fab:hover {
+        color: $green;
+    }
 }
 
 .home__social-media--inactive {

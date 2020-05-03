@@ -3,7 +3,7 @@
     align-items: center;
     width: 100%;
     min-width: 320px;
-    height: 180px;
+    height: 100px;
     list-style: none;
 
     .menu__item {
@@ -27,16 +27,28 @@
 
     .menu__item--active {
         display: block;
-        // background-color: rgba(0, 0, 0, .2);
-        // height: 100vh;
     }
-
-
 
     .menu__item--image {
         order: -1;
         margin-top: 10px;
         transform: scale(.7);
         margin-bottom: 100px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .home__menu {
+        .menu__item {
+            h4 {
+                font-size: 30px;
+            }
+        }
+
+        .menu__item--image {
+            margin-top: 40px;
+            transform: scale(1.2);
+        }
     }
 }

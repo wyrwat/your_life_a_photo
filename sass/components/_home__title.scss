@@ -1,10 +1,11 @@
 .home__title {
+    flex-grow: 2;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: $white;
     font-family: $main-font;
     width: 100%;
-    margin-top: 10px;
 
     .title__header {
         text-transform: uppercase;
@@ -22,4 +23,19 @@
 
 .home__title--inactive {
     display: none;
+}
+
+@media (min-width: 768px) {
+    .home__title {
+        .title__header {
+            font-size: 36px;
+            letter-spacing: 5.4px;
+        }
+
+        .title__subtitle {
+            font-size: 18px;
+            letter-spacing: 2.4px;
+        }
+    }
+
 }
