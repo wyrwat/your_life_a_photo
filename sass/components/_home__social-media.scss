@@ -1,4 +1,12 @@
-.home__social-media {}
+.home__social-media {
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-grow: 2;
+    margin: 0 auto 10px;
+    width: 50%;
+    font-size: 25px;
+    color: $white;
+}
 
 .home__social-media--inactive {
     display: none;
