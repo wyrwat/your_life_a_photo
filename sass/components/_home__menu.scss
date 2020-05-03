@@ -6,10 +6,9 @@
     height: 180px;
     list-style: none;
 
-
     .menu__item {
         display: none;
-        padding: 2px;
+        padding: 10px;
         width: 100%;
         text-align: center;
 
@@ -28,12 +27,16 @@
 
     .menu__item--active {
         display: block;
-        background-color: rgba(0, 0, 0, .2);
+        // background-color: rgba(0, 0, 0, .2);
+        // height: 100vh;
     }
+
+
 
     .menu__item--image {
         order: -1;
         margin-top: 10px;
         transform: scale(.7);
+        margin-bottom: 100px;
     }
 }

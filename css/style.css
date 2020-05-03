@@ -1,41 +1,146 @@
-h1 { font-size: 36px; }
+h1 {
+  font-size: 36px;
+}
 
-h2 { font-size: 24px; }
+h2 {
+  font-size: 24px;
+}
 
-h3 { font-size: 18px; }
+h3 {
+  font-size: 18px;
+}
 
-h4 { font-size: 14px; }
+h4 {
+  font-size: 14px;
+}
 
-h5 { font-size: 14px; }
+h5 {
+  font-size: 14px;
+}
 
-h6 { font-size: 10px; }
+h6 {
+  font-size: 10px;
+}
 
-p { font-size: 12px; }
+p {
+  font-size: 12px;
+}
 
-.flex-wrapper { display: -ms-flexbox; display: flex; }
+.flex-wrapper {
+  display: flex;
+}
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.home { -ms-flex-direction: column; flex-direction: column; background-image: url(/images/home-background.png); height: 100vh; width: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; }
+.home {
+  background-image: url(/images/home-background.png);
+  height: 85vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-.home__menu { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; width: 100%; min-width: 320px; height: 180px; list-style: none; }
+.home__menu {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 180px;
+  list-style: none;
+}
 
-.home__menu .menu__item { display: none; padding: 2px; width: 100%; text-align: center; }
+.home__menu .menu__item {
+  display: none;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
 
-.home__menu .menu__item h4 { color: #fff; text-transform: uppercase; font-family: "M PLUS Rounded 1c", sans-serif; letter-spacing: 2.4px; cursor: pointer; }
+.home__menu .menu__item h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  letter-spacing: 2.4px;
+  cursor: pointer;
+}
 
-.home__menu .menu__item h4:hover { color: #1abc9c; }
+.home__menu .menu__item h4:hover {
+  color: #1abc9c;
+}
 
-.home__menu .menu__item--active { display: block; background-color: rgba(0, 0, 0, 0.2); }
+.home__menu .menu__item--active {
+  display: block;
+}
 
-.home__menu .menu__item--image { -ms-flex-order: -1; order: -1; margin-top: 10px; transform: scale(0.7); }
+.home__menu .menu__item--image {
+  order: -1;
+  margin-top: 10px;
+  transform: scale(0.7);
+  margin-bottom: 100px;
+}
 
-.home__title { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; color: #fff; font-family: "M PLUS Rounded 1c", sans-serif; width: 100%; margin-top: 10px; }
+.home__title {
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  width: 100%;
+  margin-top: 10px;
+}
 
-.home__title .title__header { text-transform: uppercase; font-size: 25px; width: 90%; text-align: center; }
+.home__title .title__header {
+  text-transform: uppercase;
+  font-size: 25px;
+  width: 90%;
+  text-align: center;
+}
 
-.home__title .title__subtitle { font-size: 12px; letter-spacing: 1.3px; margin: 13px 0 26px; }
+.home__title .title__subtitle {
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  margin: 13px 0 26px;
+}
 
-.btn { width: 192px; height: 51px; border-radius: 3px; background-color: #16a085; border: none; color: #fff; text-transform: uppercase; font-size: 12px; font-weight: 700; font-family: "M PLUS Rounded 1c", sans-serif; }
+.home__title--inactive {
+  display: none;
+}
 
-.btn--home { width: 166px; height: 49px; }
+.home__social-media--inactive {
+  display: none;
+}
+
+.btn {
+  width: 192px;
+  height: 51px;
+  border-radius: 3px;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.btn--home {
+  width: 166px;
+  height: 49px;
+}
+
+.home__wrapper {
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home__wrapper--menu-on {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
